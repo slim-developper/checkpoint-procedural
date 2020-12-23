@@ -1,0 +1,35 @@
+PROCEDURE dot_product()
+VAR
+ a1:=FLOAT,b1:=FLOAT,c1:=FLOAT,a2:=FLOAT,b2:=FLOAT,c2:=FLOAT;
+BEGIN
+    ps:=a1*a2+b1*b2+c1*c2;
+    write(ps);
+END
+
+PROCEDURE product_n
+
+VAR
+   n : INTEGER;
+   i: INTEGER;
+   j: INTEGER;
+   T : ARRAY_OF FLOAT[3][n];
+BEGIN
+  Write("donner le nombre de vecteurs à vérifier");
+  Read(n);
+FOR i FROM 1 TO 3 DO
+    FOR j FROM 1 TO n DO
+      Write("donner les coordonnées du vecteur:",i)  
+        Read(m[i][j]);
+    END_FOR
+END_FOR
+   
+
+  FOR i FROM 1 TO n DO 
+  FOR j FROM 1 TO n DO 
+  a1:=T[1][i],b1:=[2][i],c1:=[3][i],a2:=[1][j],b2:=[2][j],c2:=[3][j];
+  IF(dot_product():=0) THEN
+  write("les vecteurs",i,"et",j,"sont orthogonaux");
+  END_FOR
+  END_FOR
+
+END
